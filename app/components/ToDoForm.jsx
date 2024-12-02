@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import React from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
   View,
   TextInput,
@@ -12,7 +11,6 @@ import {
 
 const ToDoForm = ( {addTask} ) => {
   const [taskText, setTaskText] = useState('');
-  const [idNext, setIdNext] = useState(0);
 
   function submitTask() {
     if (taskText === '') {
@@ -39,17 +37,6 @@ export default ToDoForm;
 
 
 const styles = StyleSheet.create({
-  task: {
-    padding: 10,
-    borderBottomWidth: 1,
-    borderColor: '#ccc',
-  },
-  completed: {
-    backgroundColor: '#e0e0e0',
-  },
-  taskText: {
-    fontSize: 16,
-  },
   form: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -57,6 +44,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
     marginTop: 20,
   },
+  
   input: {
     flex: 1,
     borderWidth: 1,
