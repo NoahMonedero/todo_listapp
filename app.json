@@ -2,6 +2,7 @@
   "expo": {
     "name": "todo_listapp",
     "slug": "todo_listapp",
+    "scheme": "todo_listapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
